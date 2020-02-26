@@ -1,0 +1,7 @@
+# Trimming primers from sequences
+ls *fastq*|paste - -|awk -F '_S' '{print $1 "\t" $0 }'|sed 's/Fastq\///' > samplesPrimerTrim.list
+cut -f2 samplesPrimerTrim.list > R1.list
+cut -f3 samplesPrimerTrim.list > R2.list
+mkdir $PWD/cutadaptPrimerTrimmed/
+parallel --xapply "/usr/local/home/user/.linuxbrew/bin/cutadapt -g CCTAYGGGRBGCASCAG -G GGACTACHVGGGTWTCTAAT --pair-filter=any --discard-untrimmed -o $PWD/cutadaptPrimerTrimmed/{1}.primertrimmed.fastq.gz -p $PWD/cutadaptPrimerTrimmed/{2}.primertrimmed.fastq.gz {1} {2}" :::: R1.list :::: R2.list
+echo "done trimming primers."

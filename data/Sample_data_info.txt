@@ -1,0 +1,13 @@
+Info on sample data variables:
+
+SampleID: Sample name mathing fastq.gz naming
+Sample: Unique sample name
+Fabric: Sample from cotton (cot), polyester (pol)
+Guy: ID of the subject wearing the T-shirt. CON: unworn
+Batch: T-shirts were sampled and washed in batches; B1, B2, B3, and B4
+Day.of.wash: Day of washing the t-shirt
+Treatment: How was t-shirt treated: prewash (unworn), prewash.wash (washed unworn), dirt (worn by subject), wash (worn by subject and hereeafter washed)
+Orientation: Sample from left (L) or right (R) armpit
+Type: Is it a sample or a control
+First_Tshirt: Which t-shirt was worn first, and have thereby been lying in the fridge 3 days before DNA extraction
+

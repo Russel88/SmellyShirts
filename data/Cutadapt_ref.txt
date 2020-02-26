@@ -1,0 +1,4 @@
+# Trimming the reference database
+/usr/local/home/user/.linuxbrew/bin/cutadapt -g CCTAYGGGRBGCASCAG...ATTAGAWACCCBDGTAGTCC -o rdp_train_set_16_trim.fa.gz rdp_train_set_16.fa.gz --discard-untrimmed
+/usr/local/home/user/.linuxbrew/bin/cutadapt -g CCTAYGGGRBGCASCAG...ATTAGAWACCCBDGTAGTCC -o rdp_species_assignment_16_trim.fa.gz rdp_species_assignment_16.fa.gz --discard-untrimmed
+
