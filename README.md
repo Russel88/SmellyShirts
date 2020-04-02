@@ -1,9 +1,12 @@
 # SmellyShirts
 
 #### Scripts and data to reproduce results for the paper:
-The T-shirt microbiome is individual and shaped by washing and fabric type (Submitted)
+The T-shirt microbiome is distinct between individuals and shaped by washing and fabric type (Sterndorff and Russel et al., Environmental Research, 2020):
+https://www.sciencedirect.com/science/article/abs/pii/S001393512030342X
 
 ## How to reproduce results
+A phyloseq object with all the prepared data can be found in data/physeq.RData
+
 ### Preparation
 * Get sequences from http://www.ncbi.nlm.nih.gov/bioproject/594290
 * Run data/Cutadapt_seq.txt to remove primers from sequences
